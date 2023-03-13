@@ -47,7 +47,27 @@ body {
   background-color: #dadada;
   font-family: Arial;
 }
+.container .row-1 {
+  display: flex;
+}
+.container .row-1 .col-1 {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.container .row-1 .col-2 {
+  padding-top: 200px;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 400px;
+}
+.container .row-1 .col-3 {
+  text-align: center;
+}
 
+.container2 {
+  padding-left: 50px;
+}
 .container2 .dado {
   text-align: center;
   border-radius: 10px;

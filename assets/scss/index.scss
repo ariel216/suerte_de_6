@@ -53,8 +53,26 @@ body {
     padding: 20px;
     background-color: $color-bg-prymary;
     font-family: Arial;
+    .row-1{
+      display: flex;
+      .col-1{
+        text-align: center;
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+      .col-2{
+        padding-top: 200px;
+        align-items: center;
+        padding-left: 200px;
+        padding-right: 400px;
+      }
+      .col-3{
+        text-align: center;
+      }
+    }
 }
 .container2{
+  padding-left: 50px;
   .dado{
     text-align: center;
     border-radius: 10px;
