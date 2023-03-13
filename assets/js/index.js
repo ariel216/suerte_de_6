@@ -127,7 +127,7 @@ window.addEventListener('load', async function (){
         {
             let puntajesGuardadosM = "" + e.d1 + "-" + e.d2 + "-" + e.d3 + "-" + e.d4 + "-" + e.d5;
             console.log("generando html", puntajesGuardadosM);
-            txtResultadoMaquina.innerHTML += ' <div class="col"><p>Turno ' + (index+1) + '</p><div class="puntos"><p>' + puntajesGuardadosM + '</p></div></div>';
+            txtResultadoMaquina.innerHTML += ' <div class="col"><p class="turno">Turno ' + (index+1) + '</p><div class="puntos"><p>' + puntajesGuardadosM + '</p></div></div>';
         });
 
         //verificando el ganador 
