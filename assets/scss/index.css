@@ -1,0 +1,34 @@
+/*
+aqui va los estilos de la pagina
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 50px;
+  background-color: #cc6427;
+  width: 100%;
+  display: flex;
+}
+.header .item {
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0.5rem;
+  width: 50%;
+}
+.header .itme1 {
+  margin-left: 100px;
+  color: #fff;
+}
+.header .itme2 {
+  text-align: center;
+  margin-left: 100px;
+}
+
+.container {
+  margin: 0px;
+  padding: 50px;
+  background-color: #dadada;
+}/*# sourceMappingURL=index.css.map */

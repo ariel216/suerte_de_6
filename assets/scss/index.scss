@@ -1,0 +1,44 @@
+@import './colors.scss';
+/*
+aqui va los estilos de la pagina
+*/
+body {
+    margin:0;
+    padding:0;
+  }
+.header{
+    height: 50px;
+    background-color:$color-primary;
+    width: 100%;
+    display: flex;
+    .item {
+        font-size: 2rem;
+        line-height: 1;
+        
+       padding: 0.5rem;
+        //background: mistyrose;
+        //border: 3px solid tomato;
+       // color: tomato;
+        //margin: 6px;
+        width: 50%;
+       
+      }
+      .itme1{
+       // text-align: left;
+        margin-left: 100px;
+        color: $color-white;
+        
+    }
+    .itme2{
+         text-align: center;
+         margin-left: 100px;
+        // color: $color-white;
+         
+     }
+}
+.container{
+    margin: 0px;
+    padding: 50px;
+    background-color: $color-bg-prymary;
+
+}

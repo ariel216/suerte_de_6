@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/index.css" />
+
     <title>Document</title>
-</head>
-<body>
-    <h1>SUERTE DE 6</h1>
-</body>
+  </head>
+  <body>
+    <div class="header">
+      <div class="item itme1">SUERTE DE 6</div>
+      <div class="item itme2">
+        <button>iniciar juego</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Jugador1</p>
+          <div class="container2">
+            <div class="dado">
+              <p id="dado1">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado2">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado3">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado4">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado5">0</p>
+            </div>
+          </div>
+          <div class="container3">
+            <p>PUNTAJE</p>
+            <div class="puntaje">
+              <p id="puntajeJugador">0</p>
+            </div>
+          </div>
+          <div class="container4">
+            <p>Turno 1</p>
+            <div class="dado">
+              <p>1-2-3-4</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <button type="submit" id="btnGirarDado">Girar el dado</button>
+        </div>
+        <div class="col">
+          <p>Maquina</p>
+          <div class="container2">
+            <div class="dado">
+              <p id="dado1">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado2">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado2">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado2">0</p>
+            </div>
+            <div class="dado">
+              <p id="dado2">0</p>
+            </div>
+          </div>
+          <div class="container3">
+            <p>PUNTAJE</p>
+            <div class="puntaje">
+              <p id="puntajeMaquina">30</p>
+            </div>
+          </div>
+          <div class="container4">
+            <p>Turno 1</p>
+            <div class="dado">
+              <p>1-2-3-4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reglas">
+        <div>
+          <p>Reglas</p>
+          <span
+            >ESTE JUEGO ES MUY DIVERTIDO DONDE EL GANADOR SE DIFINE EN 6
+            TURNOS</span
+          >
+        </div>
+        <div>
+          <p>
+            1) GIRA LOS 5 DADOS DONDE SOLO SE SUMAN LOS NUMEROS IMPARES EN
+            EXEPCION DEL COMODIN 2) EL COMODIN ES IDENTIFICADO COMO NUMERO 6 EL
+            CUAL SUMA COMO IMPAR
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/dado.js"></script>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
