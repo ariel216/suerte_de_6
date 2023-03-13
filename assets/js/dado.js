@@ -6,7 +6,7 @@ class Dado{
   async girarDado(){
       return new Promise((resolve, reject) =>
       {
-          let numero = Math.floor(Math.random() * this.caras)
+          let numero = Math.floor(Math.random() * this.caras+1)
           setInterval(() => {
               resolve(numero);
           }, 300);

@@ -13,11 +13,9 @@ body {
   display: flex;
 }
 .header .item {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1;
-  font-family: Arial;
-  font-weight: 800;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 50%;
 }
 .header .itme1 {
@@ -27,86 +25,10 @@ body {
 .header .itme2 {
   text-align: center;
   margin-left: 100px;
-  padding: 0.5rem;
-}
-.header .itme2 .btn-nav {
-  border-radius: 40px;
-  background-color: #da9a23;
-  color: #fff;
-  font-family: Arial;
-  text-transform: uppercase;
-  font-weight: 800;
-  border-style: none;
-  padding: 7px 20px 7px 20px;
-  cursor: pointer;
 }
 
 .container {
   margin: 0px;
-  padding: 20px;
+  padding: 50px;
   background-color: #dadada;
-  font-family: Arial;
-}
-
-.container2 .dado {
-  text-align: center;
-  border-radius: 10px;
-  width: 30px;
-  height: auto;
-  font-weight: 900;
-  font-size: x-large;
-  color: #000;
-  text-transform: uppercase;
-  background-color: #cbb500;
-}
-
-.reglas {
-  background-color: #fff;
-  text-align: center;
-  padding-bottom: 30px;
-}
-.reglas .text {
-  font-weight: 800;
-}
-
-.title1 {
-  font-weight: 900;
-  font-size: x-large;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.title2 {
-  font-size: medium;
-  font-weight: 900;
-  color: #cc6427;
-  text-transform: uppercase;
-}
-
-.btn-girardado {
-  border-radius: 10px;
-  background-color: #cc6427;
-  color: #fff;
-  font-family: Arial;
-  text-transform: uppercase;
-  font-weight: 800;
-  border-style: none;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.container4 {
-  align-items: center;
-}
-.container4 .turno {
-  font-weight: 900;
-  font-size: small;
-  text-transform: uppercase;
-  color: #cc6427;
-}
-.container4 .puntos {
-  font-weight: 900;
-  font-size: small;
-  text-transform: uppercase;
-  color: #000;
 }/*# sourceMappingURL=index.css.map */

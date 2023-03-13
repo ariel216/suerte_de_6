@@ -13,13 +13,14 @@
     <div class="header">
       <div class="item itme1">SUERTE DE 6</div>
       <div class="item itme2">
-        <button class="btn-nav">iniciar juego</button>
+        <button id="btnIniciar">iniciar juego</button>
+        <button id="btnReiniciar" style="display: none;">Volver a Jugar</button>
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row" id="panelJuego" style="display: none;">
         <div class="col">
-          <p class="title1">Jugador 1</p>
+          <p>Jugador1</p>
           <div class="container2">
             <div class="dado">
               <p id="dado1">0</p>
@@ -38,18 +39,14 @@
             </div>
           </div>
           <div class="container3">
-            <p class="title2">PUNTAJE</p>
-            <div class="title1">
+            <p>PUNTAJE</p>
+            <div class="puntaje">
               <p id="puntajeJugador">0</p>
             </div>
           </div>
           <div class="container4">
             <div class="row">
                 <div id="colPuntosJugador1"class="col">
-                    <!-- <p>Turno 1</p>
-                    <div class="dado">
-                      <p>1-2-3-4</p>
-                    </div> -->
                 </div>
             </div> 
             
@@ -58,7 +55,7 @@
         </div>
         <div class="col">
           <div class="row">
-              <button class="btn-girardado" type="submit" id="btnGirarDado">Girar el dado</button>
+              <button type="submit" id="btnGirarDado">Girar el dado</button>
           </div>
           <div class="row">
             <div id="ganador">
@@ -68,37 +65,33 @@
 
         </div>
         <div class="col">
-          <p class="title1">Maquina</p>
+          <p>Maquina</p>
           <div class="container2">
             <div class="dado">
-              <p id="dado1">0</p>
+              <p id="dado1m">0</p>
             </div>
             <div class="dado">
-              <p id="dado2">0</p>
+              <p id="dado2m">0</p>
             </div>
             <div class="dado">
-              <p id="dado2">0</p>
+              <p id="dado3m">0</p>
             </div>
             <div class="dado">
-              <p id="dado2">0</p>
+              <p id="dado4m">0</p>
             </div>
             <div class="dado">
-              <p id="dado2">0</p>
+              <p id="dado5m">0</p>
             </div>
           </div>
           <div class="container3">
-            <p class="title2">PUNTAJE</p>
-            <div class="title1">
-              <p id="puntajeMaquina">30</p>
+            <p>PUNTAJE</p>
+            <div class="puntaje">
+              <p id="puntajeMaquina">0</p>
             </div>
           </div>
           <div id="turnosJugador" class="container4">
             <div class="row">
                 <div id="colPuntosMaquina"class="col">
-                    <!-- <p>Turno 1</p>
-                    <div class="dado">
-                      <p>1-2-3-4</p>
-                    </div> -->
                 </div>
             </div> 
            
@@ -106,18 +99,18 @@
         </div>
       </div>
 
-      <div class="reglas">
+      <div class="reglas" id="panelReglas">
         <div>
-          <p class="title1">Reglas</p>
-          <span class="text"
+          <p>Reglas</p>
+          <span
             >ESTE JUEGO ES MUY DIVERTIDO DONDE EL GANADOR SE DIFINE EN 6
             TURNOS</span
           >
         </div>
-        <div> 
-          <p class="text">
+        <div>
+          <p>
             1) GIRA LOS 5 DADOS DONDE SOLO SE SUMAN LOS NUMEROS IMPARES EN
-            EXEPCION DEL COMODIN <br> 2) EL COMODIN ES IDENTIFICADO COMO NUMERO 6 EL
+            EXEPCION DEL COMODIN 2) EL COMODIN ES IDENTIFICADO COMO NUMERO 6 EL
             CUAL SUMA COMO IMPAR
           </p>
         </div>
