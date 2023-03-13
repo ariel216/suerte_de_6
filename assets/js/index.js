@@ -13,6 +13,10 @@
 window.addEventListener('load', async function (){
 
     const btnGirarDado = document.getElementById("btnGirarDado");
+    const txtTurnos = document.getElementById("colPuntosJugador1");
+    const txtGanador = document.getElementById("ganador");
+
+
  
     const txtdado1 = document.getElementById('dado1');
     const txtdado2 = document.getElementById('dado2');
@@ -68,6 +72,14 @@ window.addEventListener('load', async function (){
         let puntosJugador1 = sumadePuntosAcumulados(dataJugador1);
         console.log("puntaje jugador"+puntosJugador1);
         txtpuntos1.innerHTML = "" + puntosJugador1;
+        //mostrando turnos
+        txtTurnos.innerHTML = '';
+        dataJugador1.forEach((e,index) =>
+        {
+            let puntajesGuardados = "" + e.d1 + "-" + e.d2 + "-" + e.d3 + "-" + e.d4 + "-" + e.d5;
+            console.log("generando html", puntajesGuardados);
+            txtTurnos.innerHTML += ' <div class="col"><p>Turno ' + (index+1) + '</p><div class="puntos"><p>' + puntajesGuardados + '</p></div></div>';
+        });
 
         //maquina
          numDado1 = await dado1.girarDado();
@@ -82,7 +94,9 @@ window.addEventListener('load', async function (){
             console.log("fin del juego")
             if (puntosJugador1>puntosMaquinas){ 
                 console.log("el ganador el el jugador 1");
-            }else { 
+                txtGanador.innerHTML="<h3>Felicidades....!!! Ganaste....!!!</h3>"
+            } else{ 
+                txtGanador.innerHTML="<h3>Ups ....!!!</h3>"
                 console.log("el ganador es la maquina");
 
             }
@@ -113,55 +127,3 @@ window.addEventListener('load', async function (){
     }
 
 });
-/*
-buttonSalu.addEventListener('click', jugar);
-function jugar(){ 
-    console.log("nombre", text1.value);
-   // saludo.innerHTML="saludos "+text1.value+" desde javascript"
-    jugador1.push(rotarDados()) //persona 1
-    console.log("turno de maquina")
-    jugador2.push(rotarDados())//maquina 
-    
-    turnos++;
-    console.log("data", jugador1);
-    console.log("data", jugador2);
-    
-  
-    //console.log("puntos jugador1",verificarPuntos(jugador1));
-    txtdado1.innerHTML = rotarDados(jugador1).d1;
-    txtdado2.innerHTML = rotarDados(jugador2).d2;
-
-    txtpuntos1.innerHTML =verificarPuntos(jugador1);
-    txtpuntos2.innerHTML = verificarPuntos(jugador2);
-
-    if (verificarPuntos(jugador1) > 100){
-        console.log("ganador jugador 1", jugador2);
-        ganador.innerHTML = "Felicidades ganaste el juego";
-        
-    }
-     if (verificarPuntos(jugador2) > 100){
-        console.log("ganador jugador 2", jugador2); 
-        ganador.innerHTML = "Lo siento perdiste la maquina es el ganador";
-    }
-   
-    
-
-}
-
-function rotarDados(){
-     dado1 = Math.floor(Math.random() * 6);
-     dado2 = Math.floor(Math.random() * 6);
-    return{ d1: dado1, d2: dado2 };
-}
-function verificarPuntos(dataPuntos){
-    let puntos = 0;
-   for (let i = 0; i < dataPuntos.length; i++) {
-       const e = dataPuntos[i];
-       puntos = puntos+e.d1 + e.d2;
-     
-     
-    }
-    console.log("cantidad de puntos acumulados",puntos)
-    return puntos;
-}
-*/
