@@ -43,15 +43,69 @@ body {
 
 .container {
   margin: 0px;
-  padding: 20px;
+  padding: 5px;
   background-color: #dadada;
   font-family: Arial;
 }
-
-.container2 .dado {
+.container .row {
+  align-items: center;
   text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  width: 100%;
+}
+.container .col {
+  width: 35%;
+}
+.container .col-20 {
+  align-items: center;
+  width: 20%;
+  margin-top: 100px;
+}
+.container .col-20 div {
+  color: #dadada;
+}
+.container .col-20 .gandor {
+  text-align: center;
+  color: #cc6427;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.container4 {
+  font-family: Arial;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container4 .col-12 {
+  width: 70px;
+  margin: 5px;
+}
+.container4 .col-12 .title {
+  color: #cc6427;
+}
+.container4 .col-12 .title .puntos {
+  color: #000;
+}
+.container4 .row {
+  margin: 0px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  /* padding: 5px;
+  margin: 10px;
+  width: 20%; */
+}
+.container2 .dado {
+  padding: 0px;
+  text-align: center;
+  margin: 10px;
   border-radius: 10px;
-  width: 30px;
+  width: 100px;
   height: auto;
   font-weight: 900;
   font-size: x-large;
@@ -109,4 +163,8 @@ body {
   font-size: small;
   text-transform: uppercase;
   color: #000;
+}
+
+.container3 {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
