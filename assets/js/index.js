@@ -102,7 +102,7 @@ window.addEventListener('load', async function (){
         {
             let puntajesGuardados = "" + e.d1 + "-" + e.d2 + "-" + e.d3 + "-" + e.d4 + "-" + e.d5;
             console.log("generando html", puntajesGuardados);
-            txtTurnos.innerHTML += ' <div class="col"><p>Turno ' + (index+1) + '</p><div class="puntos"><p>' + puntajesGuardados + '</p></div></div>';
+            txtTurnos.innerHTML += ' <div class="col"><p class="turno">Turno ' + (index+1) + '</p><div class="puntos"><p>' + puntajesGuardados + '</p></div></div>';
         });
 
         //maquina
