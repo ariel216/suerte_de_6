@@ -141,6 +141,9 @@ window.addEventListener('load', async function (){
                 console.log("el ganador es la maquina");
 
             }
+            btnGirarDado.disabled = true;
+            btnGirarDado.style.opacity = 0.6;
+            btnGirarDado.innerText = 'FINALIZADO';
         }else{
             btnGirarDado.disabled = false;
             btnGirarDado.style.opacity = 1;
