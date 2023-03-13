@@ -19,7 +19,7 @@ window.addEventListener('load', async function (){
         location.reload();
     }
 
-    btnIniciar.addEventListener('click', iniciarJuego);
+    //btnIniciar.addEventListener('click', iniciarJuego);
     btnReiniciar.addEventListener('click', reiniciarJuego);
     //
 
@@ -173,5 +173,6 @@ window.addEventListener('load', async function (){
         }
         return 0;
     }
+    
 
 });
