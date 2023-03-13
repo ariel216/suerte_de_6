@@ -53,6 +53,7 @@ window.addEventListener('load', async function (){
     btnGirarDado.addEventListener('click', jugarGirarDado);
     async function jugarGirarDado(){
         btnGirarDado.disabled = true;
+        btnGirarDado.style.opacity = 0.6;
         btnGirarDado.innerText = 'Girando...';
         //jugador1
         turnos++;
@@ -142,6 +143,7 @@ window.addEventListener('load', async function (){
             }
         }else{
             btnGirarDado.disabled = false;
+            btnGirarDado.style.opacity = 1;
             btnGirarDado.innerText = 'Girar el dado';
         }
 
