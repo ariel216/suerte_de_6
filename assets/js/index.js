@@ -162,6 +162,24 @@ window.addEventListener('load', async function (){
       }
       return puntos;
     }
+    function  restadePuntosAcumulados(dataDado=[]){
+        let puntos = 0;
+        console.log("datapuntaje", dataDado);
+          for (let i = 0; i < dataDado.length; i++) {
+              const e = dataDado[i];
+              puntos = puntos+esPar(e.d1) + esImpar(e.d2)+esPar(e.d3)+esPar(e.d4)+esPar(e.d5);
+        }
+        return puntos;
+      }
+    function esPar(numero){
+        
+        //verificandocomodin
+        
+        if (numero % 2 == 0 && numero!=6 ){
+           return numero 
+        }
+        return 0;
+    }
     function esImpar(numero){
         
         //verificandocomodin
